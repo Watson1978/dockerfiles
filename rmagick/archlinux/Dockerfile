@@ -1,0 +1,5 @@
+FROM archlinux/base:latest
+
+RUN pacman -Syy --noconfirm pkg-config make gcc ruby libmagick6 libxml2
+
+WORKDIR /opt/rmagick
